@@ -1,0 +1,158 @@
+header{
+    background: #9CFFDB;
+}
+body{
+    width: 100%;
+    background: #ebebeb;
+}
+.logoAlura{
+   margin: 10px;
+   width: 5%;
+}
+.logoVictor{
+    width: 5rem;
+    height: 5rem;
+    margin: 10px;
+}
+.headerLogo{
+    display: flex;
+}
+
+.inputTexto{
+    margin: 1rem;
+    width: 30rem;
+    height: 40rem;
+}
+
+.botonesEncriptar{
+    display: flex;
+}
+
+.buttonEncriptar {
+    margin-left: 50px;
+    position: relative;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.buttonEncriptar::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: linear-gradient(135deg,#8d22ff,#00f7f7);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+.buttonEncriptar:hover::before {
+    width: 105%;
+   }
+   
+.buttonEncriptar:hover {
+    color: ghostwhite;
+}
+
+.buttonDesEncriptar {
+    margin-left: 50px;
+    position: relative;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.buttonDesEncriptar::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: linear-gradient(270deg,#ff0303,#420101);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+.buttonDesEncriptar:hover::before {
+    width: 105%;
+   }
+   
+.buttonDesEncriptar:hover {
+    color: ghostwhite;
+}
+
+.buttonCopiar {
+    margin-left: 15rem;
+    position: relative;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.buttonCopiar::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: linear-gradient(270deg,#b676ff,#42013c);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+.buttonCopiar:hover::before {
+    width: 105%;
+   }
+   
+.buttonCopiar:hover {
+    color: ghostwhite;
+}
+
+footer{
+    background: #BA90E5;
+    text-align: center;
+}
+
+.footerLogo{
+    display: inline-block;
+}

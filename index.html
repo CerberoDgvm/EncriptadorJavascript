@@ -5,21 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador&boxV;Alura</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-
+        <div class="headerLogo">
+        <img class="logoAlura" src="/img/alura_logo2.png">
+        </div>
+        
     </header>
     <main>
-        <h1>Encriptador</h1>
-        <input id="textoLimpio" type="text">
-        <button id="Encriptar" onclick="encriptar()">Encriptar</button>
-        <button id="Desencriptar" onclick="desencriptar()">Desencriptar</button>
-        <textarea name="" id="Resultado" cols="30" rows="10"></textarea>
-
+        <textarea class="inputTexto" id="textoLimpio" type="text"></textarea>
+        <textarea name="" id="Resultado" cols="30" rows="10" ></textarea>
+        <div class="botonesEncriptar">
+            <button class="buttonEncriptar" id="Encriptar" onclick="encriptar()">Encriptar</button>
+            <button class="buttonDesEncriptar" id="Desencriptar" onclick="desencriptar()">Desencriptar</button>
+            <button class="buttonCopiar" id="Copiar" onclick="copiar()">Copiar</button>
+        </div>
+        
+        
     </main>
     <footer>
-        <img src="">
+        <div class="footerLogo">
+            <img class="logoVictor" src="img/logovictor.PNG">
+        </div>
         <p class="copyright">&copy Copyright Victor Dorado 2023</p>
     </footer>
 </body>

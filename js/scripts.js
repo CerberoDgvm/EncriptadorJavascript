@@ -35,29 +35,13 @@ function desencriptar(){
     if(textoLimpio == ""){
         alert("llena esto")
     }else{
-        var textResult = "";
-        for(var cont = 0; cont < textoLimpio.length; cont++){
-           switch(textoLimpio[cont]){
-                case 'a':
-                    textResult = textResult + "ei";
-                break;
-                case 'e':
-                    textResult = textResult + "enter";
-                break;
-                case 'i':
-                    textResult = textResult + "imes";
-                break;
-                case 'o':
-                    textResult = textResult + "ober";
-                break;
-                case 'u':
-                    textResult = textResult + "ufat";
-                break;
-                default:
-                    textResult = textResult + textoLimpio[cont];
-           }    
-        }
-        resultado(textResult);
+        let textResult = textoLimpio
+        .replaceAll('enter', 'e')
+        .replaceAll('imes', 'i')
+        .replaceAll('ei', 'a')
+        .replaceAll('ober', 'o')
+        .replaceAll('ufat', 'u')
+        resultado(textResult)
     }
 }
 
