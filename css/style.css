@@ -23,6 +23,11 @@ body{
     width: 30rem;
     height: 40rem;
 }
+.textResult{
+    margin: 1rem;
+    width: 30rem;
+    height: 40rem;
+}
 
 .botonesEncriptar{
     display: flex;
@@ -109,7 +114,7 @@ body{
 }
 
 .buttonCopiar {
-    margin-left: 15rem;
+    margin-left: 10rem;
     position: relative;
     background-color: transparent;
     font-size: 17px;

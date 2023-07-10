@@ -49,3 +49,12 @@ function resultado(resultado){
     resultadoTextArea = document.getElementById("Resultado");
     resultadoTextArea.value = resultado; 
 }
+
+function copiar(){
+    var resultado = document.getElementById("Resultado").value;
+    navigator.clipboard.writeText(resultado).then(function() {
+      alert("Texto copiado al portapapeles: " + resultado);
+    }, function() {
+      alert("Error al copiar el texto al portapapeles.");
+    });
+}
